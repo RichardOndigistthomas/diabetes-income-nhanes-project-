@@ -1,0 +1,40 @@
+Diabetes Risk in African-American Communities
+
+1. Research Question
+I want to find out whether income levels affect diabetes risk for African-American adults. This topic is important because diabetes affects this community at higher rates, and I want to see if income is one of the reasons why.
+
+2. Hypothesis
+My hypothesis is that African-American adults with lower income have higher HbA1c levels and higher diabetes rates than those with higher income.
+
+3. Data Description
+I am using data from the CDC's National Health and Nutrition Examination Survey (NHANES) from 2021-2023. I will use the following files:
+Demographics (race, income, age, sex)
+https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/DEMO_L.htm
+Variable List for Demographics (includes RACE and INCOME variables)
+https://wwwn.cdc.gov/nchs/nhanes/search/variablelist.aspx?Component=Demographics&Cycle=2021-2023
+Glycohemoglobin (HbA1c biomarker)
+https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/GHB_L.htm
+Diabetes Questionnaire (self-reported diabetes)
+https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/DIQ_L.htm
+NHANES main survey homepage
+https://wwwn.cdc.gov/nchs/nhanes
+
+
+
+These files include the main variables I need:
+- Race (RIDRETH3)
+- Income (INDFMPIR)
+- HbA1c (LBXGHbA1c)
+- Diabetes diagnosis (DIQ010)
+
+4. Methods
+I will clean and merge the data by using the participant ID (SEQN). Then I will compare HbA1c levels between income groups. I plan to use a permutation test and bootstrap confidence intervals to understand the differences.
+
+5. Limitations
+One limitation is that NHANES is an observational study, so I cannot say income directly causes diabetes. Another limitation is that some of the diabetes information is self-reported, which may not always be completely accurate.
+
+6. References
+CDC National Health and Nutrition Examination Survey (NHANES) datasets:
+https://wwwn.cdc.gov/nchs/nhanes
+
+
